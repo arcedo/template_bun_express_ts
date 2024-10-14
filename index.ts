@@ -1,4 +1,4 @@
-import { Server } from "./src/models/Server.model";
+import { Server } from './src/models/Server.model';
 
 export const server: Server = new Server();
 
