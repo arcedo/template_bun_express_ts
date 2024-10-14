@@ -6,5 +6,5 @@ export default {
   password: process.env.DB_PASS ?? 'some_password',
   waitForConnections: true,
   connectionLimit: 10,
-    queueLimit: 0,
+  queueLimit: 0,
 };
