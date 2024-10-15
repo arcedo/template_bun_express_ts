@@ -9,7 +9,7 @@ export default [
       'src/**/*.{js,mjs,cjs,ts}',
       'specs/**/*.{js,ts,mjs,cjs}',
       'index.ts',
-      'eslint.config.js'
+      'eslint.config.js',
     ],
   },
   {
