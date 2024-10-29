@@ -26,8 +26,4 @@ bun.lockb
 .vscode/
 .idea
 
-<<<<<<< HEAD
 .config/*
-=======
-.config/*
->>>>>>> d98052768790db9c23eb9b387b666e724579b71d
