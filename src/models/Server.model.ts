@@ -3,10 +3,11 @@ import cors from 'cors';
 
 export class Server {
   private app: express.Application;
-  private apiPath: string = '/api';
+  private apiPath: string;
 
-  constructor() {
+  constructor(apiPath: string) {
     this.app = express();
+    this.apiPath = apiPath;
         
     this.middlewares();
     this.routes();
@@ -25,7 +26,7 @@ export class Server {
   }
 
   // listen function to start the server
-  public listen(port: number = Number(process.env.SERVER_PORT)): void {
+  public listen(port: number): void {
     if (!port || port < 0 || port > 65535 || isNaN(port)) {
       throw new Error('Invalid port number');
     }
